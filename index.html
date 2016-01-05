@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Trello External Window</title>
+    <title>Trello EX</title>
     <link rel="stylesheet" href="main.css">
 </head>
 <body>
-    <div id="drag">&bull;</div>
+    <div id="drag" class="buttonMinimize" onclick="windowMinimize();">_</div>
+
+    <div id="drag" class="buttonRestore" onclick="windowRestore();">&#x2610;</div>
+    <div id="drag" class="buttonClose" onclick="windowClose();">&times;</div>
     <webview id="main" src="https://trello.com/" partition="persist:trello" frameborder="0"></webview>
     <script src="main.js"></script>
 </body>

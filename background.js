@@ -1,7 +1,5 @@
 var nid = 'main';
 var ctd = false;
-var extID = 'ppibnbapebejhnmplokgfhijhfdchhhc'; // catcher links extension
-var appID = 'gkcknpgdmiigoagkcoglklgaagnpojed'; // this app
 var frame = 'none';
 
 // frame options
@@ -16,13 +14,13 @@ var app = function() {
         'index.html',
         {
             id: 'mainWindow',
-            innerBounds: { width: 960, height: 600 },
+            innerBounds: { width: 1280, height: 1024, minWidth: 800, minHeight: 800},
             frame: { type: frame },
             resizable: true
         },
 
         function(e) {
-            
+
         }
     );
 }
@@ -33,11 +31,4 @@ chrome.app.runtime.onLaunched.addListener(function() {
 
 chrome.app.runtime.onRestarted.addListener(function() {
     app();
-});
-
-// send cached links to webview
-chrome.runtime.onMessageExternal.addListener(function(request, sender) {
-    if (sender.id == extID) {
-        chrome.runtime.sendMessage(appID, request);
-    }
 });
