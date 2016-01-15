@@ -38,7 +38,7 @@ html, body, #main {
 #drag {
   position: absolute;
   -webkit-app-region: drag;
-  background: white;
+  /*background: white;*/
 }
 .header-top {
     height: 5px;

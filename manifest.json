@@ -4,7 +4,7 @@
    "name": "Trello EX",
    "short_name": "Trello EX",
    "description": "External Frameless Chrome Window for Trello",
-   "version": "0.1.1",
+   "version": "0.1.2",
    "icons": {
       "16": "assets/16.png",
       "32": "assets/32.png",
