@@ -68,6 +68,7 @@ window.addEventListener('focus', function(e) {
     webview.focus();
 });
 
+//windows buttons actions
 buttonMinimize.addEventListener('click', windowMinimize);
 buttonMaximize.addEventListener('click', windowMaximize);
 buttonClose.addEventListener('click', windowClose);
